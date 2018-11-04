@@ -160,39 +160,39 @@ class atj:
         colors = [36, 32, 34, 35, 31, 37]
 
         x = """
-                               `-::///+++/+++/:-.                     
-                          `-//:::.-:-`:/..:/`:--++oo/.                
-                       -///:-`/.::::/`/:.:/:`o.+/:`:++oo:`            
-                    `/+/--`+/-`:.::/+ooo+ooo+/:/-`o:o`+./yo.          
-                  `+o-/:.::`/+o+//:.+/:-:/:`+o/+os+:`/-/+`:ss.        
-                `.:-.`...`.---.---. .``.``` ..:s:::--+:-//s..o/`      
-               .:-`.-:`.--..-..-..::..:/:: :+/`/--+/:-oh/-.:-/-y:     
-              -/``-:..//-:-.-.+o++:`  +:o-  .+osd+.+:+:.--::::--s+    
-             :/`/::`:+:/:-.:+/soo::` .::/:. -:+yyh/do`:+:.yo-o// oo   
-            :+`:::.++` .-+.o++:.  `+hhdddddyo. `-ssys:h`  `sy`-//`o+  
-           .y`::-.+s`   /:oo+.   `oyhddmmmhmmd.  `:ydhd-`   sy`+-/.h: 
-           o/.-..:y`  :o.+/o/    -ssssshhdydhh:    /mds.h`  `h+-:: /d`
-          `s`::+-y/   /dsy+.o/`  `++--/ss:.-+o`   :h/yh/s`   :m.y/y`d:
-          :s`::--h`  :-/s+o`.o+.  ++--++/+-.+:  `oh--yoh-+.  `m/.:-`s+
-          +o`//-+h`  -o:yh-  .sy/`:+sys--ohyo:`/hy.  omydd    ho-::`+y
-          +o`//-/h   `:ys/s   `/yy:` ohyshs `/hd+`  -h+ms.`   yo.o/.+y
-          :y -:--m`  /s+yho`    `+hh+.-:::-+hdo.`   .mm+sh`  `m:+/o-so
-          `h`/:+`h/   :hmh/y   s` `:yds//ydy/` .o- -hoNNy`   :m./:-`d:
-           +:`:-.-o`  .:::/o`` :`  ::+osyyy//  :-..:so///`  `y+-/:.:y 
-           .s`.:--/+`  -oso+.o. -/ooo+:``:+ysyo/`ohoNmms`   sy./::.h- 
-            :+..::.oo`  `:::/yyys. `/:++o+:/` -dmmho+/.    sh./::.so  
-             /o`:-:-+y-  .-+yhddmhsh/.```.:+dhmmdNmdy/`  .hs:/:-.os   
-              /s./.:--so.   .//+sdmhdms-:dmhdmds++:    `od:-.//-so    
-               -s::.:-/:o:. :::--:+oyy/`-oyyo+::-./+/.oh+///+.-h:     
-                `+o./-:-:-+so/+//:..`  `` ```/+/so/shs::`///.ss`      
-                  .oo--+/--/:+osso++s-`os///./+ssso:-//./`.sy-        
-                    .+o:`:+/.+`:.:++oooooosoo+::/::+.++./so-          
-                       .+o/.-.:/`+/:-:/`/`+ +//-++`:-+ss:`            
-                          ./+++:-/-`:/-`+`+`-/--/oos+-                
-                              `.:/+++ooo+ooooo+:`                     
-                                    Unk9vvN
-                              https://t.me/Unk9vvN
-                                    AndTroj
+                              `-::///+++/+++/:-.                     
+                         `-//:::.-:-`:/..:/`:--++oo/.                
+                      -///:-`/.::::/`/:.:/:`o.+/:`:++oo:`            
+                   `/+/--`+/-`:.::/+ooo+ooo+/:/-`o:o`+./yo.          
+                 `+o-/:.::`/+o+//:.+/:-:/:`+o/+os+:`/-/+`:ss.        
+               `.:-.`...`.---.---. .``.``` ..:s:::--+:-//s..o/`      
+              .:-`.-:`.--..-..-..::..:/:: :+/`/--+/:-oh/-.:-/-y:     
+             -/``-:..//-:-.-.+o++:`  +:o-  .+osd+.+:+:.--::::--s+    
+            :/`/::`:+:/:-.:+/soo::` .::/:. -:+yyh/do`:+:.yo-o// oo   
+           :+`:::.++` .-+.o++:.  `+hhdddddyo. `-ssys:h`  `sy`-//`o+  
+          .y`::-.+s`   /:oo+.   `oyhddmmmhmmd.  `:ydhd-`   sy`+-/.h: 
+          o/.-..:y`  :o.+/o/    -ssssshhdydhh:    /mds.h`  `h+-:: /d`
+         `s`::+-y/   /dsy+.o/`  `++--/ss:.-+o`   :h/yh/s`   :m.y/y`d:
+         :s`::--h`  :-/s+o`.o+.  ++--++/+-.+:  `oh--yoh-+.  `m/.:-`s+
+         +o`//-+h`  -o:yh-  .sy/`:+sys--ohyo:`/hy.  omydd    ho-::`+y
+         +o`//-/h   `:ys/s   `/yy:` ohyshs `/hd+`  -h+ms.`   yo.o/.+y
+         :y -:--m`  /s+yho`    `+hh+.-:::-+hdo.`   .mm+sh`  `m:+/o-so
+         `h`/:+`h/   :hmh/y   s` `:yds//ydy/` .o- -hoNNy`   :m./:-`d:
+          +:`:-.-o`  .:::/o`` :`  ::+osyyy//  :-..:so///`  `y+-/:.:y 
+          .s`.:--/+`  -oso+.o. -/ooo+:``:+ysyo/`ohoNmms`   sy./::.h- 
+           :+..::.oo`  `:::/yyys. `/:++o+:/` -dmmho+/.    sh./::.so  
+            /o`:-:-+y-  .-+yhddmhsh/.```.:+dhmmdNmdy/`  .hs:/:-.os   
+             /s./.:--so.   .//+sdmhdms-:dmhdmds++:    `od:-.//-so    
+              -s::.:-/:o:. :::--:+oyy/`-oyyo+::-./+/.oh+///+.-h:     
+               `+o./-:-:-+so/+//:..`  `` ```/+/so/shs::`///.ss`      
+                 .oo--+/--/:+osso++s-`os///./+ssso:-//./`.sy-        
+                   .+o:`:+/.+`:.:++oooooosoo+::/::+.++./so-          
+                      .+o/.-.:/`+/:-:/`/`+ +//-++`:-+ss:`            
+                         ./+++:-/-`:/-`+`+`-/--/oos+-                
+                             `.:/+++ooo+ooooo+:`                     
+                                   Unk9vvN
+                             https://t.me/Unk9vvN
+                                   AndTroj
     """
         for N, line in enumerate(x.split("\n")):
             sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
