@@ -153,7 +153,7 @@ class atj:
 
     @staticmethod
     def main_menu(self):
-        global USER, WAN, LAN, ORG, LHOST, LPORT, LGHOST, LGPORT, NGHOST, NGPORT, checker
+        global USER, WAN, LAN, ORG, LHOST, LPORT, LGHOST, LGPORT, NGHOST, NGPORT
         atj.updater(self)
         atj.cls(self)
         clear = '\x1b[0m'
