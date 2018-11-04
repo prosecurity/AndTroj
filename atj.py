@@ -70,7 +70,7 @@ class atj:
         atlv = 'apktool -version'
         atl = os.popen(atlv)
         chk_atl = atl.read()
-        if chk_atl > '2.3.4':
+        if chk_atl > '2.3.4-dirty':
             pass
         else:
             os.system('apt-get install -y tor apktool aapt sendemail proxychains python-socks kali-linux-full && service tor start && '
