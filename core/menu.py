@@ -303,10 +303,10 @@ def main_menu():
             check = os.path.exists('~/.AndTroj/twilio_token.txt')
             if check == (False):
                 subprocess.call(
-                    'mkdir ~/.AndTroj',
+                    'mkdir /root/.AndTroj',
                     shell=True)
                 subprocess.call(
-                    'echo "' + Twilio_TOKEN + '" > ~/.AndTroj/twilio_token.txt && echo "' + Twilio_SID + '" > ~/.AndTroj/twilio_sid.txt',
+                    'echo "' + Twilio_TOKEN + '" > /root/.AndTroj/twilio_token.txt && echo "' + Twilio_SID + '" > /root/.AndTroj/twilio_sid.txt',
                     shell=True)
             else:
                 print "I: Twilio Token installed..."
