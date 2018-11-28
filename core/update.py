@@ -9,7 +9,7 @@ dir = '/usr/share/AndTroj'
 
 def updater():
     global checker, state
-    __version__ = '2.0.0'
+    __version__ = '2.3.0'
     last_ver = 'https://raw.githubusercontent.com/unk9vvn/AndTroj/master/others/version'
 
     state = 0
