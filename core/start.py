@@ -51,14 +51,19 @@ def version():
                                                       '&& chmod +x /usr/bin/atj')
     else:
         pass
+    
+    chk_htm = os.path.exists('/var/www/html/index.html')
+    if chk_htm == (False):
+        pass
+    else:
+        os.system('cd /var/www/html/ && rm -r *')
+        pass
+    
 
     chk_tmp = os.path.exists('/usr/share/AndTroj/tmp')
     if chk_tmp == (False):
         os.system('mkdir {0}/tmp'.format(dir))
         os.system('chmod +x {0}/tmp'.format(dir))
-        os.system('cd /var/www/html/ && rm -r *.apk')
-        os.system('cd /var/www/html/ && rm -r *.html')
-        os.system('cd /var/www/html/ && rm -r *.php')
     else:
         os.system('rm -r {0}/tmp'.format(dir))
         os.system('mkdir {0}/tmp'.format(dir))
@@ -75,3 +80,4 @@ def cls():
     linux = 'clear'
     windows = 'cls'
     os.system([linux, windows][os.name == 'nt'])
+
