@@ -40,36 +40,36 @@ def main_menu():
     colors = [36, 32, 34, 35, 31, 37]
 
     x = """
-                           `-::///+++/+++/:-.                     
-                      `-//:::.-:-`:/..:/`:--++oo/.                
-                   -///:-`/.::::/`/:.:/:`o.+/:`:++oo:`            
-                `/+/--`+/-`:.::/+ooo+ooo+/:/-`o:o`+./yo.          
-              `+o-/:.::`/+o+//:.+/:-:/:`+o/+os+:`/-/+`:ss.        
-            `.:-.`...`.---.---. .``.``` ..:s:::--+:-//s..o/`      
-           .:-`.-:`.--..-..-..::..:/:: :+/`/--+/:-oh/-.:-/-y:     
-          -/``-:..//-:-.-.+o++:`  +:o-  .+osd+.+:+:.--::::--s+    
-         :/`/::`:+:/:-.:+/soo::` .::/:. -:+yyh/do`:+:.yo-o// oo   
-        :+`:::.++` .-+.o++:.  `+hhdddddyo. `-ssys:h`  `sy`-//`o+  
-       .y`::-.+s`   /:oo+.   `oyhddmmmhmmd.  `:ydhd-`   sy`+-/.h: 
-       o/.-..:y`  :o.+/o/    -ssssshhdydhh:    /mds.h`  `h+-:: /d`
-      `s`::+-y/   /dsy+.o/`  `++--/ss:.-+o`   :h/yh/s`   :m.y/y`d:
-      :s`::--h`  :-/s+o`.o+.  ++--++/+-.+:  `oh--yoh-+.  `m/.:-`s+
-      +o`//-+h`  -o:yh-  .sy/`:+sys--ohyo:`/hy.  omydd    ho-::`+y
-      +o`//-/h   `:ys/s   `/yy:` ohyshs `/hd+`  -h+ms.`   yo.o/.+y
-      :y -:--m`  /s+yho`    `+hh+.-:::-+hdo.`   .mm+sh`  `m:+/o-so
-      `h`/:+`h/   :hmh/y   s` `:yds//ydy/` .o- -hoNNy`   :m./:-`d:
-       +:`:-.-o`  .:::/o`` :`  ::+osyyy//  :-..:so///`  `y+-/:.:y 
-       .s`.:--/+`  -oso+.o. -/ooo+:``:+ysyo/`ohoNmms`   sy./::.h- 
-        :+..::.oo`  `:::/yyys. `/:++o+:/` -dmmho+/.    sh./::.so  
-         /o`:-:-+y-  .-+yhddmhsh/.```.:+dhmmdNmdy/`  .hs:/:-.os   
-          /s./.:--so.   .//+sdmhdms-:dmhdmds++:    `od:-.//-so    
-           -s::.:-/:o:. :::--:+oyy/`-oyyo+::-./+/.oh+///+.-h:     
-            `+o./-:-:-+so/+//:..`  `` ```/+/so/shs::`///.ss`      
-              .oo--+/--/:+osso++s-`os///./+ssso:-//./`.sy-        
-                .+o:`:+/.+`:.:++oooooosoo+::/::+.++./so-          
-                   .+o/.-.:/`+/:-:/`/`+ +//-++`:-+ss:`            
-                      ./+++:-/-`:/-`+`+`-/--/oos+-                
-                          `.:/+++ooo+ooooo+:`                     
+                          `-/osssssssssssso/-`                    
+                      -+sss+-+-`os.yo:++/.o-/sss+-                
+                   /sy+++`.h. d`d++m+om/s.h.hy/:+oys/             
+                .sy/// h/h`:d-y:/+-/+-+/-s/sodooh:///ys.          
+              -ys-ss/:y:so-/osssso++++osssso+.oo+/s`:o.sy-        
+            `ys:oossyo/+oyo/:`:.-:.:/.:/-.-:/syo/+/s+:oo:sy`      
+           /d/:-soh/-+ho-.:::``:- .os: -:`.:`/::sy+:+ysso+:d/     
+          sy-..+oo-+h:`-:..hy+y/  :s+.  /y/sh..:/`:h+-oyss:.ys    
+         ys :+oo/:d/   .m-yyyo/- ` -:   .+oyhy-N.   /d::yosd.sy   
+        oy.++++//d.  ::oNdyo:     .--.     :oyhN+-:  .d//s//y.ys  
+       :m-y+++//d`   dyyy++::`. -.o.`+.- .`::/+hsyd   `d/so+++.m: 
+      `d/`/+++.m`  /.ohso` ://:///++++///://:  :odo.+  `m.syoo:/d`
+      :m`+++y:y+   smyms`   -//+/`ohho`/+//-    omsmo   +y s+oy-m:
+      sy:+++y`N`  -.dy+:...-- :: ./hh/. :: --...//hh.:  `N`o+/:-so
+      yo-///s-m   odohd.-.--:/o.`+/::/+`.o/:--.--hd:ho   m-s+++-+y
+      yo::/+o-m   `yNy/:  ...:+s.//:://.s+:...  :/yNs    m-h++++oy
+      oy/hsss`N`  oo:oN-   .-o.:ss:--:ss:.o-.   -My-oo  `N`o+++.so
+      :m :++y:y+   sNMy+: `+/:.--:////:--.:/+` -+hNNs   +y-o++o`m:
+      `d/::+o+.m`  -:/+ho:.       -//-       ./sdo::-  `m-o++++/d`
+       :m-yo++//d` `ommMo//        -:        +oyNhmo` `d//s+++`m: 
+        oy /o++//d.  `::/oMss`   `+++s     :yNy+/:   .d//y+--`ys  
+         ys-`+o++:d/ `/sdmNysNs+/./-//-//hNyyNmmy+- /d-+y-`::sy   
+          sy:..ooo-+h/--.-//odm/hNh--yNh+Ndo//-./:/h+-so+:+/ys    
+           /d-o.ssy+-+yo:/:/:-:+sho..ohs/-:://::oh+.h//syo-d/     
+            `ys-oosyss:/oyy//::..`.-`.-`:/.//syo+-ys//o/.sy`      
+              -ys.sooh+d-s:+osssysssosssssso:/+/h:/yy/.sy-        
+                .sy/:os.h-`d/o+-/+:o:/+.+o:d-y+h-o+`+ys.          
+                   :sy+:+ s//sy-y.`h`m/om:s-y.++/+ys/             
+                      -+sss+/o/ s-`y.s+/:++-+sss+-                
+                          `-/osssssssssssso/-`                    
                                 Unk9vvN
                           https://t.me/Unk9vvN
                                 AndTroj
