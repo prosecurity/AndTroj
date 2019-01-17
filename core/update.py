@@ -33,7 +33,7 @@ def updater():
                     'rm -r /usr/share/AndTroj && mkdir /usr/share/AndTroj',
                     shell=True)
                 subprocess.call(
-                    'wget ' + updater + ' -O /tmp/atj_update.tar.gz',
+                    'proxychains wget ' + updater + ' -O /tmp/atj_update.tar.gz',
                     shell=True)
                 subprocess.call(
                     'cd /tmp && tar -xvf atj_update.tar.gz && cd /tmp/AndTroj-' + checker + ' && cp -r * /usr/share/AndTroj/',
