@@ -45,8 +45,8 @@ cd AndTroj && chmod 755 atj.py requirements.txt
 pip install -r requirements.txt
 ./atj.py
 
-After Running
- atj
+# After Running
+atj
 ```
 # Only support the Kali Linux 2018 operating system
 
