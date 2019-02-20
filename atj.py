@@ -3,12 +3,11 @@
 # AVI
 from core.update import updater
 from core.start import start
-from core.menu import main_menu
-
+from core.menu import menu
 
 def main():
     start()
     updater()
-    main_menu()
+    menu().main_menu()
 
 main()
