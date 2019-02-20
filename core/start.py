@@ -5,8 +5,10 @@
 from core.menu import *
 
 
+
 dir = '/usr/share/AndTroj'
 tmp = dir + '/tmp/'
+
 
 try:
     from colorama import Fore, Back, Style
