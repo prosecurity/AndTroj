@@ -41,7 +41,6 @@ def _eng_menu():
                     "[3] Mail SpearPhishing\n\t"
                     "[4] FileFormat Injection(Disabled)\n\t"
                     "[5] Add Ngrok Ports\n\t"
-                    "[6] Back Main Menu\n\t"
                     "[0] EXIT\n\t"
                     "\n\nroot@unk9vvn:~# ")
 
