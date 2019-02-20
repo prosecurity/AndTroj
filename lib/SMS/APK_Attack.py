@@ -2,8 +2,8 @@
 # coding=utf-8
 # https://t.me/unk9vvn
 # AVI
-from core.start import Tor
 from core.menu import *
+
 
 
 dir = '/usr/share/AndTroj'
