@@ -25,14 +25,14 @@ A tool for integrating the Metasploit payload with Android's healthy programs an
 
 ![alt text][logo]
 
-[logo]: https://raw.githubusercontent.com/unk9vvn/AndTroj/master/others/Main_Menu.jpg "Logo Title Text 2"
+[logo]: https://raw.githubusercontent.com/unk9vvn/AndTroj/master/others/Main-Menu.jpg "Logo Title Text 2"
 
 
 This tool creates a tune-up of the Metasploit program, unlocks the program and integrates it into the footage. During this operation, the vagaries are mimicking the unpacking Android antivirus and compiling it after the completion of the integration. For the program's service, it's one-on-one and rearwards automatically after getting back access on Android OS Bargas And it runs to allow the service to be activated every hour, all of which is done automatically
 
 # Social Engineering Menu...
 
-![alt text](https://raw.githubusercontent.com/unk9vvn/AndTroj/master/others/Social_Menu.jpg)
+![alt text](https://raw.githubusercontent.com/unk9vvn/AndTroj/master/others/Social-Menu.jpg)
 
 
 After completing the build-in program that intercepts itself, I will show you the social engineering methods that can be sent to the victim in three ways. A Web SpearPhishing is website and another way through Sending Spoof SMS link download RAT to content sms.
