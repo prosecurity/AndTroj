@@ -2,7 +2,7 @@
 # coding=utf-8
 # https://t.me/unk9vvn
 # AVI
-from core.social_menu import *
+from core.menu import *
 
 
 rnd = ''.join(random.choice(string.ascii_lowercase) for i in range(10))
@@ -287,6 +287,6 @@ def _binder():
     subprocess.call(
         'cp ' + CLS_RN + '-b.apk /var/www/html/',
         shell=True)
-    eng_menu()
+    menu().eng_menu()
     print "[i] generating torjan /root"
     pass
