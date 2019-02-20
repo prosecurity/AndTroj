@@ -2,10 +2,11 @@
 # https://t.me/unk9vvn
 # AVI
 from core.menu import *
-from core.start import cls
+
 
 
 dir = '/usr/share/AndTroj'
+
 
 def updater():
     global checker, state
