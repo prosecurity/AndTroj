@@ -27,7 +27,19 @@ cwd = os.getcwd()
 
 
 def start():
+    atlv = 'apktool -version'
+    atl = os.popen(atlv)
+    chk_atl = atl.read()
+    if chk_atl > '2.3.4':
+        pass
+    else:
+        os.system(
+            'apt-get install -y tor apktool aapt sendemail proxychains python-socks kali-linux-full;service tor start;'
+            'proxychains wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.4.jar -O /usr/local/bin/apktool.jar;'
+            'wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool;'
+            'chmod +x /usr/local/bin/apktool.jar && chmod +x /usr/local/bin/apktool')
     chk_cmd = os.path.exists('/usr/share/AndTroj/')
+    
     if chk_cmd == (False):
         executor = '#!/bin/bash\npython /usr/share/AndTroj/atj.py "$@"'
         commandline = open('/usr/bin/atj', 'w')
