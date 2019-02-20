@@ -5,6 +5,7 @@
 from core.menu import *
 
 
+
 NGHOST = "127.0.0.1"
 kutation = '"'
 bslash1 = '\\'
