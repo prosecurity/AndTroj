@@ -4,7 +4,6 @@ flask
 colorama
 env
 mime
-email
 freeze
 PySocks
 SocksiPy-branch
