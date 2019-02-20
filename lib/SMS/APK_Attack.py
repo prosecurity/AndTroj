@@ -3,7 +3,7 @@
 # https://t.me/unk9vvn
 # AVI
 from core.start import Tor
-from core.social_menu import *
+from core.menu import *
 
 
 dir = '/usr/share/AndTroj'
