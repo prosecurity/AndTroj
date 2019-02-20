@@ -28,11 +28,18 @@ cwd = os.getcwd()
 
 def start():
     atlv = 'apktool -version'
+    confproxy = '/etc/proxychains.conf'
     atl = os.popen(atlv)
     chk_atl = atl.read()
     if chk_atl > '2.3.4':
         pass
     else:
+        if 'socks4  127.0.0.1 9050' in open(confproxy).read():
+            pass
+        else:
+            subprocess.call(
+                'echo "socks4  127.0.0.1 9050" >> ' + confproxy,
+                shell=True)
         os.system(
             'apt-get install -y tor apktool aapt sendemail proxychains python-socks kali-linux-full;service tor start;'
             'proxychains wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.4.jar -O /usr/local/bin/apktool.jar;'
