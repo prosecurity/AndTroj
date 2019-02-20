@@ -2,7 +2,7 @@
 # coding=utf-8
 # https://t.me/unk9vvn
 # AVI
-from core.social_menu import *
+from core.menu import *
 
 
 NGHOST = "127.0.0.1"
