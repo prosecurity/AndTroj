@@ -2,8 +2,8 @@
 # coding=utf-8
 # https://t.me/unk9vvn
 # AVI
-from core.start import Tor
 from core.menu import *
+
 
 
 LAN = ([l for l in ([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2]
