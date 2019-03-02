@@ -35,7 +35,7 @@ def start():
             'wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool;'
             'chmod +x /usr/local/bin/apktool.jar && chmod +x /usr/local/bin/apktool')
         os.system(
-            'pip install colorama twilio flask env paramiko freeze SocksiPy-branch smtp2go')
+            'pip install colorama twilio flask env paramiko freeze SocksiPy-branch smtp2go urllib3 requests mime')
     check_cmd = os.path.exists('/usr/share/AndTroj/')
     if check_cmd == (False):
         linker = '#!/bin/bash\npython /usr/share/AndTroj/atj.py "$@"'
