@@ -2,16 +2,21 @@
 # coding=utf-8
 # https://t.me/unk9vvn
 # AVI
-from core.menu import *
+import os, sys, time, random
+from twilio.rest import Client
+from core.start import cls
+from lib.Web.Harvester import harstr
+from lib.Web.APK_Attack import apk_atck
+from lib.SMS.Harvester import s_harstr
+from lib.SMS.APK_Attack import sms_apk
+from lib.Mail.Mail_Phish import mail_apk
 
 
 
-def _eng_menu():
-    global URL, NoIP, METHOD, URL_CLONE, LGPORT_BEEF, TWIL_SID, TWIL_TOKEN, SPOOF_NUM, TARGET_NUM, PHONELIST, MailPhish, TARGET_MAIL, TARGET_LIST, SUBJECT_MAIL
+def social_eng_menu():
     cls()
     clear = "\x1b[0m"
     colors = [36, 32, 34, 35, 31, 37]
-
     x = """
                    ___          _      _ 
                   / __| ___  __(_)__ _| |
@@ -40,73 +45,56 @@ def _eng_menu():
                     "[2] SMS SpearPhishing\n\t"
                     "[3] Mail SpearPhishing\n\t"
                     "[4] FileFormat Injection(Disabled)\n\t"
-                    "[5] Add Ngrok Ports\n\t"
                     "[0] EXIT\n\t"
                     "\n\nroot@unk9vvn:~# ")
-
     if eng == "1":
         checkauth = os.path.exists('/root/.ngrok2/ngrok.yml')
         if checkauth == (True):
-            CLONE_MTD = raw_input("\n\t[1] APK Attack"
-                                  "\n\t[2] Harvester"
-                                  "\n\nroot@unk9vvn:~# ")
-            if CLONE_MTD == "1":
+            clone_method = raw_input("\n\t[1] APK Attack"
+                                     "\n\t[2] Harvester"
+                                     "\n\nroot@unk9vvn:~# ")
+            if clone_method == "1":
                 apk_atck()
-            elif CLONE_MTD == "2":
+            elif clone_method == "2":
                 harstr()
             else:
-                _eng_menu()
+                social_eng_menu()
         else:
-            print "\n\t[X] Please install Ngrok BeEF and Twilio..."
-            _eng_menu()
+            print "\n\t[X] Please selected 4 menu for install Ngrok..."
+            social_eng_menu()
 
     elif eng == "2":
-        chekngk = os.path.exists('/root/.AndTroj/twilio_token.txt')
-        if chekngk == (True):
-            CLONE_MTD = raw_input("\n\t[1] APK Attack"
-                                  "\n\t[2] Harvester"
-                                  "\n\nroot@unk9vvn:~# ")
-            if CLONE_MTD == "1":
-                s_apk_atck()
-            elif CLONE_MTD == "2":
+        check_ngrok = os.path.exists('/root/.AndTroj/twilio_token.txt')
+        if check_ngrok == (True):
+            clone_method = raw_input("\n\t[1] APK Attack"
+                                     "\n\t[2] Harvester"
+                                     "\n\nroot@unk9vvn:~# ")
+            if clone_method == "1":
+                sms_apk()
+            elif clone_method == "2":
                 s_harstr()
         else:
             print "\n\t[X] Please install Ngrok BeEF and Twilio..."
-            _eng_menu()
+            social_eng_menu()
 
     elif eng == "3":
-        chekngk = os.path.exists('/root/.ngrok2/ngrok.yml')
-        if chekngk == (True):
-            mailph()
+        check_ngrok = os.path.exists('/root/.ngrok2/ngrok.yml')
+        if check_ngrok == (True):
+            mail_apk()
         else:
             print "\n\t[X] Please install Ngrok BeEF and Twilio..."
-            _eng_menu()
+            social_eng_menu()
 
     elif eng == "4":
-        chekngk = os.path.exists('/root/.ngrok2/ngrok.yml')
-        if chekngk == (True):
-            print "\n"
+        check_ngrok = os.path.exists('/root/.ngrok2/ngrok.yml')
+        if check_ngrok == (True):
+            print "\n\t[X] FileFormat Injection Disabled..."
+            social_eng_menu()
         else:
             print "\n\t[X] Please install Ngrok BeEF and Twilio..."
-            _eng_menu()
-
-    elif eng == "5":
-        chekngk = os.path.exists('/root/.ngrok2/ngrok.yml')
-        if chekngk == (True):
-            total = int(input("\n\tA few Ports: "))
-            for i in range(total):
-                print "\n"
-                m = raw_input("\tProtocol(tcp/http): ")
-                n = raw_input("\tNumber NPORT: ")
-                print "\n"
-                subprocess.call(
-                    'gnome-terminal --tab -e \'proxychains ngrok ' + m + ' ' + n + '\'',
-                    shell=True)
-        else:
-            print "\n\t[X] Please install Ngrok BeEF and Twilio..."
-            _eng_menu()
+            social_eng_menu()
 
     elif eng == "0":
         sys.exit()
     else:
-        _eng_menu()
+        social_eng_menu()
