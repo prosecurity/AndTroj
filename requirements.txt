@@ -9,3 +9,4 @@ PySocks
 SocksiPy-branch
 smtp2go
 urllib3
+paramiko
