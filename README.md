@@ -16,7 +16,7 @@ A tool for integrating the Metasploit payload with Android's healthy programs an
 - :heavy_check_mark: Use Harvesting phishing page and BeEF-XSS Access(Hook js payload).
 - :heavy_check_mark: Bypass 90% Android Antivirus(Obfuscation Method).
 - :heavy_check_mark: Bind metasploit meterpreter payload(android) Original APKs.
-- :heavy_check_mark: Anti Forensic connections in targets(using tor ips for ngrok connections).
+- :heavy_check_mark: Anti Forensic connections in targets(using tor proxys for ngrok connections).
 - :heavy_check_mark: Create Automations persistence and bash backdoor for android phones.
 - :heavy_check_mark: Spoof Mail with smtp2go & Tamplates mails instagram,twitter,gmail,facebook,yahoo. **NEW**
 
@@ -39,7 +39,7 @@ After completing the build-in program that intercepts itself, I will show you th
 
 # How to Run
 ```
-apt-get install -y tor apktool aapt proxychains python-socks zipalign kali-linux-full openjdk-10-jdk openjdk-8-jdk
+apt-get install -y tor apktool aapt proxychains python-socks zipalign kali-linux-full openjdk-8-jdk
 git clone https://github.com/unk9vvn/AndTroj.git
 cd AndTroj && chmod 755 atj.py requirements.txt
 pip install -r requirements.txt
